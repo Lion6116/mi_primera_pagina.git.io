@@ -1,0 +1,50 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi formulario</title>
+    </head>
+    <body>
+        <form action="./index.html">
+            <fieldset>
+                <legend><strong>Sus datos:</strong></legend>
+                <label >Nombre:<br/><input type="text"  name="name"></label><br/>
+                <label >Email:<br/><input type="text" name="email"></label>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend><strong>Su opinion: </strong></legend>
+                <p>¿Como se enteraron de nosotros?</p>
+                <select>
+                    <option value="google">Google</option>
+                    <option value="email">Email</option>
+                    <option value="facebook">Facebbok</option>
+                    <option value="oter">Otro</option>
+                </select>
+                <br/>
+                <p>¿Nos visitaria nuevamente?</p>
+
+                <input id="option" type="radio" name="gender" value="f">
+                <label for="option">Si</label>
+                <input id="option" type="radio" name="gender" value="m">
+                <label for="option">No</label>
+                <input id="option" type="radio" name="gender" value="m">
+                <label for="option">Quizas</label>
+                <br/>
+                <p>Comentarios:</p>
+                <textarea name="commente" cols="20" rows="4"></textarea>
+                <br/>
+                <p>Suscribete a nuestra lista de correo electronico:</p>
+                <input type="text" name="email">
+                <input type="image" src="./images/suscribe.png" width="100" height="30">
+
+            </fieldset>
+
+
+
+        </form>
+        <br><br>
+        <center><input type="button" value="Página anterior" onClick="history.go(-1); "></center>
+        <br><br><br>
+
+    </body>
+</html>
